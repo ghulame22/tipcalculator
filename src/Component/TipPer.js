@@ -1,10 +1,10 @@
 import React from "react";
 
-function TipPer({item, index}) {
+function TipPer({item, index, perPerson}) {
   return (
     <div>
-      <button className="btnTipPer" key={index}>
-        {item}
+      <button className="btnTipPer" onClick={() => perPerson(index)}>
+        {item}%
       </button>
     </div>
   );

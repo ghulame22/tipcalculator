@@ -12,7 +12,7 @@
   margin-bottom: 1rem;
 }
 .logo img {
-  height: 4rem;
+  height: 4.2rem;
 }
 .container {
   display: flex;
@@ -27,17 +27,14 @@
   flex: 1 1 50%;
   flex-direction: column;
   margin-right: 1rem;
-  justify-content: space-evenly;
-  /* max-width: 12rem; */
-  /* margin: 1rem 0rem 1rem 1rem; */
 }
 .subContainer {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
-.subContainer> span {
-  margin-bottom: 0.5rem;
+.subContainer > span {
+  margin-bottom: 0.4rem;
 }
 #lowerSubCont {
   margin-bottom: 0;
@@ -48,10 +45,11 @@ label {
 label:before {
   content: "";
   position: absolute;
-  left: 10px;
-  top: 0;
+  left: 3px;
+  top: 8px;
   bottom: 0;
-  width: 20px;
+  height: 15px;
+  width: 15px;
   background: url("/public/icon-dollar.svg") center / contain no-repeat;
 }
 .inputBox {
@@ -61,6 +59,13 @@ label:before {
   background: hsl(189, 41%, 97%);
   border: none;
   outline: none;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid transparent;
+}
+.inputBox:focus {
+  border: 2px solid hsl(172, 67%, 45%);
 }
 .tipPerFlex {
   display: inline-flex;
@@ -79,6 +84,9 @@ label:before {
 .btnTipPer:hover {
   background: hsl(172, 67%, 45%);
 }
+.btnTipPer:focus {
+  background: hsl(171, 73%, 36%);
+}
 .tipPerCustom {
   height: 1.9rem;
   border-radius: 0.3rem;
@@ -87,7 +95,7 @@ label:before {
   outline: none;
   background: hsl(189, 41%, 97%);
   text-align: end;
-  color: white;
+  color: black;
 }
 .btnTipPer .tipPerCustom {
   background: white;
@@ -114,6 +122,11 @@ label:before {
 .lable2 {
   color: gray;
 }
+.tipAmountValue {
+  color: hsl(172, 67%, 45%);
+  font-size: 2rem;
+  font-weight: 700;
+}
 .reset {
   margin-top: 4rem;
   text-align: center;
@@ -126,7 +139,6 @@ label:before {
   padding: 0.8rem;
   border-radius: 0.3rem;
   color: white;
-
 }
 /* #00494d */
 /* #26c0ab */
