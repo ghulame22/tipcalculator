@@ -71,6 +71,7 @@ label:before {
   display: inline-flex;
   flex-wrap: wrap;
   gap: 10px 20px;
+  min-width: 16rem;
 }
 .btnTipPer {
   font-size: 1rem;
@@ -138,8 +139,13 @@ label:before {
   width: 14.5rem;
   padding: 0.8rem;
   border-radius: 0.3rem;
+  margin-bottom: 0.5rem;
   color: white;
 }
-/* #00494d */
-/* #26c0ab */
-/* #f4fafa */
+
+@media screen and (max-width: 565px) {
+  .container {
+    flex-direction: column;
+    max-width: 17rem;
+  }
+}
