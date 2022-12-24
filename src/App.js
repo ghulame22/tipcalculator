@@ -12,8 +12,7 @@ function App() {
 
   const perPerson = (index) => {
     let count = bill / noOfPeople;
-    let tipPerAmount =
-      (count * tipPer[index]) / 100 || (count * coustomInput) / 100;
+    let tipPerAmount = (count * tipPer[index]) / 100;
     let totalPerAmount = count + tipPerAmount;
     if (bill && noOfPeople !== "") {
       setTipAmount(Math.round(tipPerAmount * 100) / 100);
@@ -24,7 +23,7 @@ function App() {
   const handleChange = (e) => {
     setCoustomInput(e.target.value);
     let count = bill / noOfPeople;
-    let tipPerAmount = (count * coustomInput) / 100;
+    let tipPerAmount = (count * e.target.value) / 100;
     let totalPerAmount = count + tipPerAmount;
     if (bill && noOfPeople !== "") {
       setTipAmount(Math.round(tipPerAmount * 100) / 100);
